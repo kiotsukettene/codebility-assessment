@@ -22,7 +22,13 @@ This challenge requires you to build a **functional e-commerce product screen** 
 5. Add **animations and transitions** for a polished UX
 6. Include **error handling** and loading states
 7. Implement **unit tests** for key components
-8. Allow **2-4 hours** for this challenge
+8. Allow **2-4 days** for this challenge
+
+## Timeline
+
+- **Duration**: 2-4 days
+- You're encouraged to utilize the full timeline to ensure quality and completeness
+- Early submissions are welcome if you complete the assessment sooner
 
 ## Technical Requirements
 
@@ -66,9 +72,7 @@ This challenge requires you to build a **functional e-commerce product screen** 
 
 ### 1. Create & Switch to a New Branch
 
-```bash
 git checkout -b firstname-lastname/3-5-years-mobile
-```
 
 Replace `firstname-lastname` with your actual name.
 
@@ -143,11 +147,9 @@ tests/
 
 ### 7. Commit & Push
 
-```bash
 git add .
 git commit -m "Implement product details screen with API integration"
 git push origin firstname-lastname/3-5-years-mobile
-```
 
 ### 8. Open a Pull Request (PR)
 
@@ -174,6 +176,14 @@ Your submission will be evaluated based on:
 
 ## Time Estimate
 
-This assessment should take approximately 2-4 hours to complete. If you're unable to complete all features, prioritize quality over quantity and document what's missing.
+This assessment should take approximately 2-4 days to complete. The extended timeline allows you to:
+
+- Build a more complete and polished implementation
+- Create reusable components with proper documentation
+- Implement more comprehensive state management
+- Add thorough test coverage
+- Polish animations and user interactions
+
+If you're unable to complete all features, prioritize quality over quantity and document what's missing.
 
 **Good luck, and happy coding!**
