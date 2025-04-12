@@ -1,179 +1,115 @@
-# Mobile Assessment (3-5 Years Experience)
+# Frontend Assessment (1–2 Years Experience)
 
 ## Overview
 
-Welcome to the **3-5 Years** mobile development assessment!  
-This challenge requires you to build a **functional e-commerce product screen** with API integration, state management, and proper component architecture. You'll demonstrate your skills with React Native, data fetching, and creating a polished user experience.
-
-**Branch Requirement**: Please work on a branch named `firstname-lastname/3-5-years-mobile` (replacing `firstname-lastname` with your own).
+Welcome to the **1–2 Years** frontend assessment! Your main task is to **replicate a design** on the homepage of this Next.js app. We'll provide a design mockup that you'll need to implement with attention to detail. You'll work on a separate Git branch named after yourself, commit your changes, and open a Pull Request.
 
 ## Task Summary
 
-1. Create a **product details screen** with the following sections:
-   - Product image gallery/carousel
-   - Product information (title, price, rating)
-   - Product description
-   - Size/variant selector
-   - Add to cart functionality
-   - Related products section
-2. Integrate with the **Fake Store API** to fetch real product data
-3. Implement **state management** using your preferred approach
-4. Create **reusable components** with proper organization
-5. Add **animations and transitions** for a polished UX
-6. Include **error handling** and loading states
-7. Implement **unit tests** for key components
-8. Allow **2-4 hours** for this challenge
+1. **Use Next.js** (version 15 or the current stable release)
+2. Implement the design on the main page (`app/page.tsx`)
+3. Keep the look and layout **as close as possible** to the provided design mockup
+4. Ensure **responsive behavior** for desktop and mobile viewports
+5. Complete the task within **1–2 days**
+
+## Design Mockup
+
+![Design Mockup](https://www.moola.com/)
+
+The above mockup shows the landing page you need to implement. Pay special attention to:
+
+- Typography and font sizes
+- Spacing between elements
+- Color scheme
+- Responsive behavior
+- Button styles and hover states
 
 ## Technical Requirements
 
-### Environment
-
-- **React Native**: Use the existing Expo project structure
-- **API**: [Fake Store API](https://fakestoreapi.com/) for product data
-- **State Management**: Context API, Redux, or your preferred solution
-- **Navigation**: React Navigation
-- **Testing**: Jest and React Native Testing Library
-
-### Features to Implement
-
-1. **Product Details Screen**:
-
-   - Fetch and display product details from the API
-   - Create an image carousel for product images
-   - Display product information (title, description, price, rating)
-   - Implement a size/variant selector when applicable
-   - Add "Add to Cart" button with animation feedback
-
-2. **Related Products**:
-
-   - Fetch products from the same category
-   - Display in a horizontal scrollable list
-   - Navigate to the selected product when tapped
-
-3. **State Management**:
-
-   - Implement cart functionality (add items, view cart count)
-   - Persist cart data (React Context or Redux)
-   - Handle loading and error states
-
-4. **UI/UX Enhancements**:
-   - Add appealing animations (react-native-reanimated or similar)
-   - Implement proper loading states
-   - Create error handling UI
-   - Ensure responsive layout across device sizes
+- Use **Next.js 15** with the App Router
+- Implement with **TypeScript**
+- Style using **Tailwind CSS** (already configured in the project)
+- Ensure the page is **fully responsive**
+- Follow accessibility best practices
+- Implement basic interactions (hover states, etc.)
 
 ## Steps to Complete
 
 ### 1. Create & Switch to a New Branch
 
-```bash
-git checkout -b firstname-lastname/3-5-years-mobile
-```
-
-Replace `firstname-lastname` with your actual name.
-
-### 2. Project Structure
-
-Organize your code with a clean component architecture:
-
-```
-components/
-├── product/
-│   ├── ProductGallery.tsx
-│   ├── ProductInfo.tsx
-│   ├── VariantSelector.tsx
-│   └── RelatedProducts.tsx
-├── common/
-│   ├── Button.tsx
-│   ├── Loading.tsx
-│   └── ErrorState.tsx
-hooks/
-├── useProductDetails.ts
-├── useRelatedProducts.ts
-└── useCart.ts
-contexts/
-└── CartContext.tsx
-screens/
-└── ProductScreen.tsx
-tests/
-└── components/
-    └── product/
-        └── ProductInfo.test.tsx
-```
-
-### 3. API Integration
-
-1. Fetch product data from the Fake Store API:
-
-   ```typescript
-   // Example API endpoints
-   const getProduct = async (id: number) => {
-     const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-     return response.json();
-   };
-
-   const getRelatedProducts = async (category: string) => {
-     const response = await fetch(
-       `https://fakestoreapi.com/products/category/${category}`
-     );
-     return response.json();
-   };
+1. Clone or pull the latest version of this repository.
+2. From your local repo folder, run:
+   ```bash
+   git checkout -b firstname-lastname/frontend
+   ```
+   Replace `firstname-lastname` with your actual name.
+3. Confirm you're on the new branch:
+   ```bash
+   git branch # You should see your new branch highlighted
    ```
 
-2. Implement loading and error handling for API requests
+### 2. Implement the Design
 
-### 4. State Management
+1. Open `app/page.tsx` in your code editor.
+2. Use Tailwind CSS to style your components.
+3. Reference the design mockup for layout, colors, typography, etc.
+4. Create additional components under the `components/` directory as needed.
+5. Ensure your implementation is responsive and works well on different screen sizes.
 
-1. Create a cart context or Redux store
-2. Implement add to cart functionality
-3. Store cart state persistently
+### 3. Test Your Work
 
-### 5. UI/UX Implementation
+1. Install dependencies and run the development server:
+   ```bash
+   npm install
+   npm run dev
+   ```
+2. Open http://localhost:3000 in your browser.
+3. Confirm the homepage matches (or closely follows) the design.
+4. Test on different viewport sizes to ensure responsiveness.
+5. Check for any console errors or warnings.
 
-1. Create a visually appealing product details screen
-2. Implement the image carousel with smooth transitions
-3. Add animations for user interactions
-4. Ensure responsive layout across different device sizes
+### 4. Commit & Push
 
-### 6. Testing
+1. Stage and commit your changes:
+   ```bash
+   git add .
+   git commit -m "Implement design on homepage"
+   ```
+2. Push your branch to the remote repository:
+   ```bash
+   git push origin firstname-lastname/frontend
+   ```
 
-1. Write unit tests for key components
-2. Test the add to cart functionality
-3. Test API integration with mocked responses
+### 5. Open a Pull Request (PR)
 
-### 7. Commit & Push
-
-```bash
-git add .
-git commit -m "Implement product details screen with API integration"
-git push origin firstname-lastname/3-5-years-mobile
-```
-
-### 8. Open a Pull Request (PR)
-
-1. Go to the repository on GitHub
-2. Create a new Pull Request with your branch
-3. Use a descriptive title
-4. In the description, include:
-   - Screenshots/GIFs of your implementation
-   - Architecture decisions and state management approach
-   - Any challenges faced and how you solved them
-   - Testing approach
+1. Go to the repository's page on GitHub (or your Git hosting platform).
+2. You should see an option to **"Compare & pull request"** for your new branch, or click **"New pull request."**
+3. Select your branch as the source.
+4. Give the PR a clear title (e.g., `"Feature: [Your Name] - Frontend UI Implementation"`).
+5. In the description, include:
+   - How closely you followed the design
+   - Any challenges you faced
+   - Any decisions or trade-offs you made
+   - Browser compatibility notes
+6. Submit the PR for review.
 
 ## Evaluation Criteria
 
 Your submission will be evaluated based on:
 
-1. **Functionality**: Working product screen with all required features
-2. **Code Quality**: Clean, readable, and well-structured code
-3. **Component Architecture**: Proper organization and reusable components
-4. **State Management**: Effective state management approach
-5. **UI/UX**: Visual appeal, animations, and responsiveness
-6. **API Integration**: Proper data fetching, loading states, and error handling
-7. **Testing**: Quality and coverage of tests
+1. **Visual Accuracy**: How closely your implementation matches the design
+2. **Code Quality**: Clean, readable, and well-organized code
+3. **Responsiveness**: How well the UI adapts to different screen sizes
+4. **Attention to Detail**: Colors, spacing, typography, and visual elements
+5. **Best Practices**: Semantic HTML, accessibility, and performance considerations
 
 ## Time Estimate
 
-This assessment should take approximately 2-4 hours to complete. If you're unable to complete all features, prioritize quality over quantity and document what's missing.
+This assessment should take approximately 1–2 days to complete. The extended timeline allows you to:
+
+- Pay attention to details in the UI implementation
+- Ensure your code is clean and well-structured
+- Test thoroughly on different browsers and device sizes
+- Refine any animations or interactions
 
 **Good luck, and happy coding!**

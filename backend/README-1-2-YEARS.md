@@ -3,7 +3,7 @@
 ## Overview
 
 Welcome to the **1–2 Years** backend assessment!  
-Your goal is to create a **basic Node.js + Express** RESTful API with data validation and proper error handling. This assessment is designed to be completed in **1–2 hours** to demonstrate your fundamental backend development skills.
+Your goal is to create a **basic Node.js + Express** RESTful API with data validation and proper error handling. This assessment is designed to be completed in **1–2 days** to demonstrate your fundamental backend development skills.
 
 ## Task Summary
 
@@ -131,6 +131,6 @@ Your submission will be evaluated based on:
 
 ## Time Estimate
 
-This assessment should take approximately 1–2 hours to complete.
+This assessment should take approximately 1–2 days to complete.
 
 **Good luck, and happy coding!**

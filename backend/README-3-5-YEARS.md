@@ -3,7 +3,7 @@
 ## Overview
 
 Welcome to the **3–5 Years** backend assessment!  
-This challenge involves building a more robust Express.js API with TypeScript, proper architecture, database integration, authentication, and external API integration. We aim to see how you structure a mid-complexity application in **2–4 hours**.
+This challenge involves building a more robust Express.js API with TypeScript, proper architecture, database integration, authentication, and external API integration. We aim to see how you structure a mid-complexity application in **2–4 days**.
 
 ## Task Summary
 
@@ -135,6 +135,6 @@ Your submission will be evaluated based on:
 
 ## Time Estimate
 
-This assessment should take approximately 2–4 hours to complete. If you're unable to complete all features, prioritize quality over quantity and document what's missing.
+This assessment should take approximately 2–4 days to complete. If you're unable to complete all features, prioritize quality over quantity and document what's missing.
 
 **Good luck, and happy coding!**
