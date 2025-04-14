@@ -14,7 +14,7 @@ Welcome to the **1–2 Years** frontend assessment! Your main task is to **repli
 
 ## Design Mockup
 
-![Design Mockup](https://www.moola.com/)
+(https://www.moola.com/)
 
 The above mockup shows the landing page you need to implement. Pay special attention to:
 
